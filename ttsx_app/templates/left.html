@@ -1,4 +1,4 @@
-{% load static %}
+{% load staticfiles %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -7,9 +7,9 @@
     <title>首页左侧导航</title>
     <link rel="stylesheet" type="text/css" href={% static "css/public.css" %}/>
     <!--{#<link rel="stylesheet" type="text/css" href="css/public.css" />#}-->
-    <script type="text/javascript" src={% static "js/jquery.min.js" %}></script>
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
     <script type="text/javascript" src={% static "js/public.js" %}></script>
-    <head></head>
+</head>
 
 <body id="bg">
 <!-- 左边节点 -->
@@ -18,7 +18,7 @@
     <div class="leftsidebar_box">
         <a href="main.html" target="main">
             <div class="line">
-                <img src={% {% static "img/coin01.png" %}/>&nbsp;&nbsp;首页
+                <img src="{% static 'img/coin01.png' %}"/>&nbsp;&nbsp;首页
             </div>
         </a>
         <dl class="system_log">
