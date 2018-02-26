@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://E:/cmdb/.idea/cmdb.iml" filepath="E:/cmdb/.idea/cmdb.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ttsx.iml" filepath="$PROJECT_DIR$/.idea/ttsx.iml" />
     </modules>
   </component>
