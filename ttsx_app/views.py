@@ -10,3 +10,6 @@ def index(request):
     # tmp=loader.get_template('index.html')
     # return HttpResponse(tmp.render())
     return render(request, 'index.html')
+
+def base(request):
+    return render(request, 'base.html')
