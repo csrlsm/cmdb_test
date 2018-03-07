@@ -24,10 +24,6 @@
 
 </head>
 <body>
-
-     
-
-
 	<!-- navbar top -->
 	<div class="navbar-top">
 		<div class="side-nav-panel-left">
@@ -39,7 +35,7 @@
 		</div>
 		<!-- end site brand	 -->
 		<div class="side-nav-panel-right">
-			<a href="contact.html" class="side-nav-right"><i class="fa fa-envelope"></i></a>
+			<a href="logout.html" class="side-nav-right"><i class="fa fa-envelope"></i></a>
 		</div>
 	</div>
 	<!-- end navbar top -->
@@ -138,6 +134,29 @@
 
 	</div>
 	<!-- end slider -->
+
+    <!-- define by myself -->
+    <div class="table">
+        <table cellpadding="0" border="1">
+            <tr>
+                <th>服务器类型</th>
+                <th>供应商</th>
+                <th>型号</th>
+                <th>计算机名</th>
+                <th>内存</th>
+            </tr>
+            {% for tr in ServerList1 %}
+                <tr>
+                    <td>{{ tr.ServerType_id.ServerType }}</td>
+                    <td>{{ tr.Supplier }}</td>
+                    <td>{{ tr.Model }}</td>
+                    <td>{{ tr.Hostname }}</td>
+                    <td>{{ tr.Memory }}</td>
+                    <!--<td>{{ tr.CpuType }}</td>-->
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
 
 	<!-- about -->
 	<div class="section about-home">
