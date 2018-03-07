@@ -20,6 +20,6 @@ from ttsx_app import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$|^index/$', views.index),
-    url(r'^base/', views.base),
-    url(r'', include('ttsx_app.urls')),
+    # url(r'^base/', views.base),
+    url(r'^', include('ttsx_app.urls')),
 ]
