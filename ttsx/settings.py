@@ -55,7 +55,7 @@ ROOT_URLCONF = 'ttsx.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'ttsx_app/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,7 +126,7 @@ USE_TZ = True
 
 STATIC_ROOT = 'static/'
 STATICFILES_DIRS = [
-    (os.path.join(BASE_DIR, 'ttsx_app/static').replace('\\', '/')),
+    (os.path.join(BASE_DIR, 'static').replace('\\', '/')),
     ('css', os.path.join(STATIC_ROOT, 'css').replace('\\', '/')),
 ]
 STATIC_URL = '/static/'
