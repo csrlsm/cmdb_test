@@ -37,3 +37,13 @@ class ServerList(models.Model):
 
     def __str__(self):
         return self.Hostname.encode('utf-8')
+
+
+class TtsxAppEvent(models.Model):
+    log_type = models.CharField(max_length=40)
+    log_context = models.TextField()
+    log_time = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'ttsx_app_event'

@@ -22,7 +22,11 @@ def base(request):
 #     return render(request, 'login.html', locals())
 
 def add_server(request):
-    add_servers = add_serverform(request,"POST")
-    if add_serverform.is_valid():
-        add_serverform.save()
+    add_servers = add_serverform(request.POST)
+    if add_servers.is_valid():
+        add_servers.save()
+        # return render(request, 'register.html', locals())
         return HttpResponse("添加成功")
+    else:
+        add_servers = add_serverform()
+    return render(request, 'register.html', locals())
